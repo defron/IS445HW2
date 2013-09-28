@@ -22,16 +22,30 @@
         <form name="reservation" method="get" id="reservation" action="#">
             <fieldset id="custinfo">
                 <legend>Customer Information</legend>
-                <label>Full name: <input type="text" name="name" id="name" placeholder="Firstname Lastname" /></label>
-                <label>Email address: <input type="email" name="email" id="email" /></label>
-                <label>Phone: <input type="tel" name="phone" id="phone" /></label>
+                <label>Full name: <input type="text" name="name" id="name" placeholder="Firstname Lastname" required="required" /></label><br />
+                <label>Email address: <input type="email" name="email" id="email" required="required" /></label><br />
+                <label>Phone: <input type="tel" name="phone" id="phone" required="required" /></label><br />
             </fieldset>
             <fieldset id="room">
                 <legend>Room Information</legend>
-                <label>Arrival date: <input type="date" name="adate" id="adate" /></label>
-                <label>Arrival time: <input type="time" name="atime" id="atime" /></label>
-
+                <label>Arrival date: <input type="date" name="adate" id="adate" required="required" /></label><br />
+                <label>Arrival time: <input type="time" name="atime" id="atime" required="required" /></label><br />
+                <label>Select a room type: 
+                    <select name="room" id="room">
+                        <option value="luxury">Luxury</option>
+                        <option value="std">Standard</option>
+                        <option value="econ">Economic</option>
+                    </select>
+                </label><br />
+                <label>Number of nights (valid number is from 1 to 30): <input type="number" min="1" max="30" step="1" name="numnights" id="numnights" value="1" required="required" /></label><br />
+                <label>Number of guests (the maximum guests is 3): <input type="number" min="0" max="3" step="1" name="numguest" id="numguest" value="0" required="required" /></label><br />
             </fieldset>
+            <fieldset id="other">
+                <legend>Other Information</legend>
+                <label>Promo code: <input type="text" name="promo" id="promo" maxlength="4" /></label><br />
+                <label>Special Note: <textarea cols="40" rows="5" wrap="hard" name="notes" id="notes" placeholder="Enter your special notes here"></textarea></label><br />
+            </fieldset>
+            <input type="reset" id="reset" value="Clear form" /> <input type="submit" id="submit" value="Request Reservation" />
         </form>
         <footer>
             Contact Information<br />
