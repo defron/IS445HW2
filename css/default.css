@@ -11,14 +11,22 @@ ol {
     margin-top: 0px;
     margin-left: 40px;
 }
+nav > ul {
+    list-style-type: none;
+    margin-left: 0px;
+}
+nav > ul > li {
+    display: inline-block;
+    margin-right: 5px;
+}
 #wrapper {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 #title {
-    width: 80%;
-    border-bottom: solid 4px #00af50;
+    width: 100%;
+    border-bottom: inset 9px #00af50;
     text-align: center;
     padding: 10px;
     margin-left: auto;
