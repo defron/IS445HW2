@@ -1,4 +1,46 @@
-﻿a {
-    font-family: Arial, Verdana, sans-serif;
-    line-height: 1.4em;
+﻿p {
+    font-size: 22px;
+}
+ul{
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+ol {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 40px;
+}
+#wrapper {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#title {
+    width: 80%;
+    border-bottom: solid 4px #00af50;
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#info {
+    font-size: 22px;
+    margin-top: 20px;
+}
+.italics {
+    font-style: italic;
+}
+.centerer {
+    text-align: center;
+}
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fancy {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
 }
