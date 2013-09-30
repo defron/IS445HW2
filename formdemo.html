@@ -43,7 +43,7 @@
             </fieldset>
             <fieldset id="other">
                 <legend>Other Information</legend>
-                <label>Promo code: <input type="text" name="promo" id="promo" maxlength="4" /></label><br />
+                <label>Promo code: <input type="text" name="promo" pattern="[a-zA-Z0-9]{4}" id="promo" maxlength="4" /></label><br />
                 <label>Special Note: <textarea cols="40" rows="5" wrap="hard" name="notes" id="notes" placeholder="Enter your special notes here"></textarea></label><br />
             </fieldset>
             <input type="reset" id="reset" value="Clear form" /> <input type="submit" id="submit" value="Request Reservation" />
